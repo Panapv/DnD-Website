@@ -51,3 +51,44 @@
 .feature-block p {
     text-align: justify;
 }
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Ajuste para que la imagen ocupe el ancho completo sin bordes */
+.main-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 1em;
+    
+}
+
+.background-block {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    /* si quieres que los hijos estén uno debajo del otro */
+}
+
+.body {
+    background-color: bisque;
+}
