@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/dungeons&dragons.ico" type="image/x-icon">
+</head>
+
+<body class="custom-body">
+    <header class="bg-black text-white py-3">
+        <div class="container d-flex align-items-center">
+            <img src="assets/DnD-full-logo.png" alt="Logo D&D" class="big-logo">
+            <div class="d-flex ms-auto">
+                <a href="https://www.edu.xunta.gal/centros/iesmurallaromana/" target="_blank">
+                    <i class="bi bi-globe2 text-light mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pablo-perez-vazquez" target="_blank">
+                    <i class="bi bi-linkedin text-light mx-2"></i>
+                </a>
+                <a href="https://github.com/Panapv/DnD-Website.git" target="_blank">
+                    <i class="bi bi-github text-light mx-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="bg-danger red-line"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="class.html">Clases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="races.html">Razas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="background.html">Transfondos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feats.html">Dotes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex align-items-center bg-white my-3 rounded shadow w-75 mx-auto">
+        <img src="assets/DnD-logo-mini.png" alt="D&D Logo" class="sub-nav-logo mx-1">
+        <i class="bi bi-caret-right-fill mx-1 text-muted "></i>
+        <button class="btn fw-bold text-muted text-uppercase grey">
+            Inicio
+        </button>
+    </div>
+
+    <main class="container w-75 bg-white rounded shadow p-5">
+
+        <div class="text-center">
+            <img src="assets/Heroes__feast_5_point_5e.png" class="w-100" alt="Heroes Fest">
+        </div>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenido a Dungeons & Dragons</h1>
+                <p class="lead">Explora razas, clases y trasfondos para crear tu personaje perfecto</p>
+            </div>
+        </section>
+
+
+        <!-- Sección: Razas -->
+        <section>
+            <div class="accordion w-75 mx-auto" id="raceAccordion">
+
+                <!-- Dragonborn -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="dragonbornHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#dragonborn" aria-expanded="false"
+                            aria-controls="dragonborn">
+                            <img src="assets/races/dragonborn.jpeg" alt="Dragonborn" class="race-img">
+                            <strong>Dragonborn</strong>
+                        </button>
+                    </h2>
+                    <div id="dragonborn" class="accordion-collapse collapse" aria-labelledby="dragonbornHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 9 metros<br>
+                            <strong>Competencia:</strong> Intimidación<br>
+                            <strong>Rasgos:</strong> Arma de aliento, resistencia al tipo de daño de su linaje
+                            dracónico.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dwarf -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="dwarfHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#dwarf" aria-expanded="false"
+                            aria-controls="dwarf">
+                            <img src="assets/races/dwarf.jpeg" alt="Dwarf" class="race-img">
+                            <strong>Enano</strong>
+                        </button>
+                    </h2>
+                    <div id="dwarf" class="accordion-collapse collapse" aria-labelledby="dwarfHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 7.5 metros<br>
+                            <strong>Competencia:</strong> Hachas, martillos<br>
+                            <strong>Rasgos:</strong> Resistencia a venenos, visión en la oscuridad, conocimiento de
+                            piedra.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elf -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="elfHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#elf" aria-expanded="false" aria-controls="elf">
+                            <img src="assets/races/elf.jpeg" alt="Elf" class="race-img">
+                            <strong>Elfo</strong>
+                        </button>
+                    </h2>
+                    <div id="elf" class="accordion-collapse collapse" aria-labelledby="elfHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 9 metros<br>
+                            <strong>Competencia:</strong> Percepción<br>
+                            <strong>Rasgos:</strong> Visión en la oscuridad, inmunidad al sueño mágico, afinidad con la
+                            naturaleza.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gnome -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="gnomeHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#gnome" aria-expanded="false"
+                            aria-controls="gnome">
+                            <img src="assets/races/gnome.jpeg" alt="Gnome" class="race-img">
+                            <strong>Gnomo</strong>
+                        </button>
+                    </h2>
+                    <div id="gnome" class="accordion-collapse collapse" aria-labelledby="gnomeHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Pequeño<br>
+                            <strong>Velocidad:</strong> 7.5 metros<br>
+                            <strong>Competencia:</strong> Historia<br>
+                            <strong>Rasgos:</strong> Intelecto agudo, trucos mágicos, visión en la oscuridad.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goliath -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="goliathHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#goliath" aria-expanded="false"
+                            aria-controls="goliath">
+                            <img src="assets/races/goliath.png" alt="Goliath" class="race-img">
+                            <strong>Goliat</strong>
+                        </button>
+                    </h2>
+                    <div id="goliath" class="accordion-collapse collapse" aria-labelledby="goliathHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 9 metros<br>
+                            <strong>Competencia:</strong> Atletismo<br>
+                            <strong>Rasgos:</strong> Resistencia de la montaña, fuerza poderosa, aguante natural al
+                            frío.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Halfling -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="halflingHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#halfling" aria-expanded="false"
+                            aria-controls="halfling">
+                            <img src="assets/races/halfling.jpeg" alt="Halfling" class="race-img">
+                            <strong>Mediano</strong>
+                        </button>
+                    </h2>
+                    <div id="halfling" class="accordion-collapse collapse" aria-labelledby="halflingHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Pequeño<br>
+                            <strong>Velocidad:</strong> 7.5 metros<br>
+                            <strong>Competencia:</strong> Sigilo<br>
+                            <strong>Rasgos:</strong> Suerte, agilidad, valentía ante el peligro.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Human -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="humanHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#human" aria-expanded="false"
+                            aria-controls="human">
+                            <img src="assets/races/human.jpeg" alt="Humano" class="race-img">
+                            <strong>Humano</strong>
+                        </button>
+                    </h2>
+                    <div id="human" class="accordion-collapse collapse" aria-labelledby="humanHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 9 metros<br>
+                            <strong>Competencia:</strong> Versatilidad<br>
+                            <strong>Rasgos:</strong> Bonificaciones equilibradas, adaptabilidad, talento variado.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orc -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="orcHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#orc" aria-expanded="false" aria-controls="orc">
+                            <img src="assets/races/orc.png" alt="Orco" class="race-img">
+                            <strong>Orco</strong>
+                        </button>
+                    </h2>
+                    <div id="orc" class="accordion-collapse collapse" aria-labelledby="orcHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 9 metros<br>
+                            <strong>Competencia:</strong> Intimidación<br>
+                            <strong>Rasgos:</strong> Agresividad, visión en la oscuridad, resistencia física.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tiefling -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tieflingHeader">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#tiefling" aria-expanded="false"
+                            aria-controls="tiefling">
+                            <img src="assets/races/tiefling.jpeg" alt="Tiefling" class="race-img">
+                            <strong>Tiefling</strong>
+                        </button>
+                    </h2>
+                    <div id="tiefling" class="accordion-collapse collapse" aria-labelledby="tieflingHeader"
+                        data-bs-parent="#raceAccordion">
+                        <div class="accordion-body">
+                            <strong>Tamaño:</strong> Mediano<br>
+                            <strong>Velocidad:</strong> 9 metros<br>
+                            <strong>Competencia:</strong> Engaño<br>
+                            <strong>Rasgos:</strong> Hechizos innatos, resistencia al fuego, visión en la oscuridad.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Sección: Clase -->
+        <section class="section bg-dark-section text-center">
+            <div class="container">
+                <h2 class="mb-4">Clase</h2>
+                <p class="mb-5">La clase determina las habilidades, estilo de combate y rol dentro del grupo. Escoge
+                    sabiamente tu camino.</p>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 text-start">
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Barbarian_Badge_Icon.png" alt="Bárbaro"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Bárbaro</h5>
+                            <p class="card-text">Guerreros salvajes que canalizan su ira para volverse casi imparables
+                                en combate.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Bard_Badge_Icon.png" alt="Bardo"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Bardo</h5>
+                            <p class="card-text">Maestros de la música y la magia, apoyan al grupo con hechizos e
+                                inspiración.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Cleric_Badge_Icon.png" alt="Clérigo"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Clérigo</h5>
+                            <p class="card-text">Canalizadores del poder divino, capaces de sanar y castigar a los
+                                enemigos.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Druid_Badge_Icon.png" alt="Druida"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Druida</h5>
+                            <p class="card-text">Protectores de la naturaleza que pueden transformarse en animales y
+                                lanzar hechizos naturales.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Fighter_Badge_Icon.png" alt="Guerrero"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Guerrero</h5>
+                            <p class="card-text">Combatientes versátiles expertos en armas y tácticas de batalla.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Sorcerer_Badge_Icon.png" alt="Hechicero"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Hechicero</h5>
+                            <p class="card-text">Magos cuyo poder proviene de su linaje o un don innato.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Wizard_Badge_Icon.png" alt="Mago"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Mago</h5>
+                            <p class="card-text">Estudiosos del arcano que dominan una gran variedad de hechizos.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Monk_Badge_Icon.png" alt="Monje"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Monje</h5>
+                            <p class="card-text">Guerreros disciplinados que canalizan su energía interior para realizar
+                                proezas físicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Paladin_Badge_Icon.png" alt="Paladín"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Paladín</h5>
+                            <p class="card-text">Campeones de la justicia y la fe, combinan combate cuerpo a cuerpo y
+                                magia sagrada.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Rogue_Badge_Icon.png" alt="Pícaro"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Pícaro</h5>
+                            <p class="card-text">Especialistas en sigilo, trampas y golpes certeros.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Ranger_Badge_Icon.png" alt="Explorador"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Explorador</h5>
+                            <p class="card-text">Cazadores y rastreadores expertos en moverse por la naturaleza y atacar
+                                a distancia.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-3 text-center">
+                            <img src="assets/class/180px-Class_Warlock_Badge_Icon.png" alt="Brujo"
+                                class="img-fluid mb-3 class-img">
+                            <h5 class="card-title">Brujo</h5>
+                            <p class="card-text">Hechiceros que obtienen su poder mediante pactos con entidades
+                                sobrenaturales.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección: Trasfondo -->
+        <section class="section text-center">
+            <div class="container">
+                <h2 class="mb-4">Trasfondo</h2>
+                <p class="mb-5">Tu historia antes de ser aventurero. ¿Fuiste un noble caído, un criminal buscado o un
+                    sabio erudito? El trasfondo define tu pasado y aporta habilidades únicas.</p>
+                <a href="#" class="btn btn-success">Descubrir Trasfondos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-light">
+        <p>© 2025 Dungeons & Dragons Fanpage - Creado por Pana</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
