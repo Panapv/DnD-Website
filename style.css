@@ -1,0 +1,53 @@
+.dnd-style {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-striped.dnd>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #d0e7f9;
+    color: inherit;
+}
+
+.traits-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #daf0ff;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: #eff8ff;
+}
+
+.table-hover tbody tr:hover td {
+    background: rgb(136, 217, 255);
+}
+
+.feature-block {
+    margin-bottom: 2rem;
+}
+
+.feature-block h5 {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.feature-block p {
+    text-align: justify;
+}
