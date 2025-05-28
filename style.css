@@ -176,3 +176,14 @@
 .center-wrapper {
     width: 65%;
 }
+
+@media (max-width: 768px) {
+    .background-img {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .center-wrapper {
+        width: 100%;
+    }
+}
