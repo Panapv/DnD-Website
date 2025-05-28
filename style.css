@@ -1,13 +1,25 @@
-.custom-body {
+.shatter-obelisk{
     background-image: url('assets/shatter_obelisk.jpg');
     background-size: cover;
-    /* La imagen cubre todo el fondo */
     background-repeat: no-repeat;
-    /* No se repite la imagen */
     background-position: center;
-    /* Centra la imagen */
     background-attachment: fixed;
-    /* La imagen queda fija al hacer scroll */
+}
+
+.paper-background{
+    background-image: url('assets/paper-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.tasha-paper{
+    background-image: url('assets/tasha-paper.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .big-logo {
@@ -42,6 +54,7 @@
 }
 
 .card {
+    background-color: transparent;
     color: #000;
     border: none;
 }
@@ -134,12 +147,11 @@
 }
 
 /* Ajuste para que la imagen ocupe el ancho completo sin bordes */
-.main-img {
+.background-img {
     width: 65%;
     height: auto;
     display: block;
     border-radius: 10px;
-    margin: 1em;
 
 }
 
@@ -152,6 +164,15 @@
     flex-direction: column;
 }
 
-.center-wrapper{
+.background-title {
+    color: #5f3726;
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #ffdb77;
+    padding-bottom: 0.5rem;
+}
+
+.center-wrapper {
     width: 65%;
 }
